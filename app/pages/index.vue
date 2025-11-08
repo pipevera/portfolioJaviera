@@ -1,7 +1,7 @@
 <template>
-    <main class="container mx-auto h-svh py-20 px-10 flex items-center justify-start sm:justify-center md:justify-center w-full font-made" >
+    <main class="container mx-auto h-full lg:h-svh py-20 px-10 flex items-center justify-start sm:justify-center md:justify-center w-full font-made" >
       <!-- Mobile version -->
-      <div class="flex flex-col items-start justify-center h-full pt-20 md:hidden space-y-8">
+      <div class="flex flex-col items-start justify-center h-full  md:hidden space-y-8">
         <div>
           <h1 class="text-6xl font-extrabold text-black/90" >
             Javiera<br> <span class="inline-block ms-24 sm:ms-40" >Zuñiga</span> 
