@@ -7,8 +7,6 @@ export default defineNuxtConfig({
     pageTransition: { name: 'page', mode: 'out-in' },
   },
 
-  css: ['~/assets/css/main.css'],
-
   devServer: {
     host: "0.0.0.0",
     port: 3000,

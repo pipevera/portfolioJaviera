@@ -1,5 +1,5 @@
 <template>
-  <main class="max-w-7xl mx-auto px-6 py-20" >
+  <main class="max-w-7xl mx-auto px-10 py-20" >
     <div class="mb-16">
       <h1 class="text-6xl md:text-8xl font-extrabold text-black/90 mb-4">
         Sobre <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">Mí</span>

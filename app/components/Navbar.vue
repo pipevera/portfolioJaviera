@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Mobile Header -->
-    <nav class="fixed top-0 left-0 right-0 font-made z-50 md:hidden" >
+    <nav class="fixed top-0 left-0 right-0 font-made z-50 xl:hidden" >
       <div class="flex items-center justify-between p-4" >
         <NuxtLink @click="isOpen = false" to="/" class="font-bold text-lg" >Javiera Zuñiga</NuxtLink>
         <button @click="isOpen = !isOpen" class="text-2xl focus:outline-none" >
@@ -13,14 +13,14 @@
 
     <!-- Mobile Menu Slide -->
     <Transition name="slide">
-      <div v-if="isOpen" class="fixed top-0 right-0 h-screen w-full bg-white  z-40 md:hidden flex flex-col justify-between p-6 pt-20" >
+      <div v-if="isOpen" class="fixed top-0 right-0 h-screen w-full bg-white  z-40 xl:hidden flex flex-col justify-between p-6 pt-20" >
         <div class="flex flex-col space-y-4">
           <NuxtLink 
             v-for="link in navLinks" 
             :key="link.path" 
             :to="link.path" 
             @click="isOpen = false" 
-            class="text-lg"
+            class="text-2xl font-made text-center"
           >
             {{ link.name }}
           </NuxtLink>
@@ -29,14 +29,15 @@
     </Transition>
 
     <!-- Desktop Menu -->
-    <nav class="fixed left-0 top-0 h-screen font-made w-48  z-50 hidden md:block" >
+    <nav class="fixed left-0 top-0 h-screen w-48  z-50 hidden xl:block " >
       <div class="flex flex-col justify-between h-full p-6" >
-        <div class="flex flex-col" >
-          <NuxtLink to="/" class="font-extrabold" >Javiera Zuñiga</NuxtLink>
+        <div class="flex flex-col space-y-5" >
+          <NuxtLink to="/" class="font-extrabold text-2xl whitespace-nowrap" >Javiera Zuñiga</NuxtLink>
           <NuxtLink 
             v-for="link in navLinks" 
             :key="link.path" 
             :to="link.path"
+            class="text-xl hover:scale-110 transition-all"
           >
             {{ link.name }}
           </NuxtLink>
