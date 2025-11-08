@@ -12,7 +12,7 @@
         :key="index"
         ref="workItems"
         :class="[
-          'work-item group relative overflow-hidden rounded-lg cursor-pointer transition-all duration-300 hover:scale-[1.02] hover:shadow-xl',
+          'work-item group relative overflow-hidden rounded-2xl cursor-pointer transition-all duration-300 shadow-2xl hover:shadow-3xl hover:z-10',
           image.size === 'large' ? 'md:col-span-2 md:row-span-2 h-[500px]' : 'h-[240px]',
           image.size === 'wide' ? 'md:col-span-2 h-[240px]' : '',
           image.size === 'tall' ? 'md:row-span-2 h-[484px]' : ''
@@ -21,7 +21,7 @@
         <img 
           :src="image.url" 
           :alt="image.title"
-          class="w-full h-full object-cover"
+          class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110 rounded-2xl"
         >
         <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
           <div>
