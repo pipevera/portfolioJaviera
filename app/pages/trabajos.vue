@@ -6,7 +6,7 @@
       </h1>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+    <div ref="gridContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
       <div 
         v-for="(image, index) in images" 
         :key="index"
@@ -41,8 +41,9 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 gsap.registerPlugin(ScrollTrigger)
 
-const workItems = ref([])
 const header = ref(null)
+const gridContainer = ref(null)
+const workItems = ref([])
 
 const images = [
   {
@@ -156,21 +157,26 @@ const images = [
 ]
 
 onMounted(() => {
+  const tl = gsap.timeline({ defaults: { ease: 'power3.out' } })
+
   // Header animation
-  gsap.from(header.value, {
+  tl.from(header.value, {
     opacity: 0,
     y: -50,
-    duration: 1,
-    ease: 'power3.out'
+    duration: 1
   })
 
-  // Work items scroll animations
-  gsap.set('.work-item', { 
-    opacity: 0, 
-    y: 50 
-  })
+  // Initial grid entrance animation
+  tl.from(gridContainer.value, {
+    opacity: 0,
+    y: 50,
+    duration: 0.8
+  }, 0.8)
 
+  // Setup scroll animations for each item
   workItems.value.forEach((item) => {
+    gsap.set(item, { opacity: 0, y: 50 })
+    
     gsap.to(item, {
       opacity: 1,
       y: 0,

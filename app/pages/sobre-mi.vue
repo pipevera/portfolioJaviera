@@ -76,14 +76,14 @@ onMounted(() => {
     x: 100,
     scale: 0.9,
     duration: 1
-  }, '-=0.5')
+  }, 0.8)
 
   // Content animations
   tl.from(content.value.querySelector('h2'), {
     opacity: 0,
     x: -50,
     duration: 0.8
-  }, '-=0.5')
+  }, 0.8)
 
   tl.from([paragraph1.value, paragraph2.value, paragraph3.value], {
     opacity: 0,

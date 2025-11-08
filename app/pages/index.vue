@@ -56,7 +56,7 @@ onMounted(() => {
     opacity: 0,
     scale: 0.8,
     duration: 1
-  }, '-=0.5')
+  }, 0.8)
   .from(mobileLink.value, {
     opacity: 0,
     x: -30,
@@ -73,8 +73,8 @@ onMounted(() => {
     opacity: 0,
     scale: 0.8,
     rotation: -5,
-    duration: 1.2
-  }, '-=0.7')
+    duration: 0.8
+  }, 0.8)
   .from(desktopLink.value, {
     opacity: 0,
     x: 50,
