@@ -3,13 +3,13 @@
       <!-- Mobile version -->
       <div class="flex flex-col items-start justify-center h-full md:hidden space-y-8">
         <div ref="mobileTitle">
-          <h1 class="text-6xl font-extrabold text-black/90" >
+          <h1 class="text-6xl font-extrabold text-gray-700" >
             Javiera<br> <span class="inline-block ms-24 sm:ms-40" >Zuñiga</span> 
           </h1>
-          <p class="text-xl text-black/70 mt-2">Graphic Designer</p>
+          <p class="text-xl text-gray-700 mt-2">Graphic Designer</p>
         </div>
         <img ref="mobileImage" class="w-full max-w-md rounded-2xl shadow-2xl" src="/images/1.png" alt="Javiera Zuñiga">
-        <NuxtLink ref="mobileLink" to="/trabajos" class="text-lg text-black/80 hover:text-black transition-colors">
+        <NuxtLink ref="mobileLink" to="/trabajos" class="text-lg text-gray-700 hover:text-black transition-colors">
           Ver mi trabajo >>
         </NuxtLink>
       </div>
@@ -17,13 +17,16 @@
       <!-- Desktop version -->
       <div class="hidden md:block relative">
         <div ref="desktopTitle" class="absolute top-10 -right-10 z-20">
-          <h1 class="text-7xl font-extrabold text-black/90" >
+          <h1 class="text-7xl font-extrabold text-gray-700" >
             Javiera<br> <span class="inline-block ms-40" >Zuñiga</span> 
           </h1>
-          <p class="text-2xl text-black/70 mt-4 ms-40">Graphic Designer</p>
+          <p class="text-2xl text-gray-700 mt-4 ms-40">Graphic Designer</p>
         </div>
         <div class="flex items-center gap-12">
-          <img ref="desktopImage" class="w-full max-w-lg relative z-0 rounded-2xl shadow-2xl" src="/images/1.png" alt="Javiera Zuñiga">
+          <div ref="desktopImage"  >
+
+            <img class="w-full max-w-lg relative z-0 rounded-2xl shadow-2xl hover:scale-105 transition duration-300" src="/images/1.png" alt="Javiera Zuñiga">
+          </div>
           <NuxtLink ref="desktopLink" to="/trabajos" class="text-xl text-black/80 hover:text-black transition-colors whitespace-nowrap">
             Ver mi trabajo >>
           </NuxtLink>

@@ -1,14 +1,14 @@
 <template>
   <main class="max-w-7xl mx-auto px-10 py-20" >
     <div ref="header" class="mb-10">
-      <h1 class="text-6xl md:text-8xl font-extrabold text-black/90 mb-4">
+      <h1 class="text-6xl md:text-8xl font-extrabold text-gray-700 mb-4">
         Sobre <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">Mí</span>
       </h1>
     </div>
 
     <div class="grid md:grid-cols-2 gap-12">
       <div ref="content" class="order-2 md:order-1">
-        <h2 class="text-3xl md:text-4xl font-bold text-black/90 mb-6">Hola, soy Javiera</h2>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-700 mb-6">Hola, soy Javiera</h2>
         <div class="space-y-4 text-lg text-black/70 leading-relaxed">
           <p ref="paragraph1">
             Soy diseñadora y creativa apasionada por transformar ideas en experiencias visuales únicas. 
@@ -38,7 +38,7 @@
         <img 
           src="/images/2.jpg" 
           alt="Javiera Zuñiga"
-          class="w-full max-w-md object-cover rounded-2xl shadow-2xl"
+          class="w-full max-w-md object-cover rounded-2xl shadow-2xl hover:scale-110 transition duration-300"
         >
       </div>
     </div>

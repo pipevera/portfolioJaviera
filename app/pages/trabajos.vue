@@ -1,7 +1,7 @@
 <template>
   <section class="max-w-7xl mx-auto px-10 py-20" >
     <div ref="header" class="mb-10">
-      <h1 class="text-6xl md:text-8xl font-extrabold text-black/90 mb-4">
+      <h1 class="text-6xl md:text-8xl font-extrabold text-gray-700 mb-4">
         Mis <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">Trabajos</span>
       </h1>
     </div>
