@@ -8,7 +8,7 @@
           </h1>
           <p class="text-xl text-black/70 mt-2">Graphic Designer</p>
         </div>
-        <img ref="mobileImage" class="w-full max-w-md rounded-2xl shadow-2xl" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=500&h=700&fit=crop" alt="Javiera Zuñiga">
+        <img ref="mobileImage" class="w-full max-w-md rounded-2xl shadow-2xl" src="/images/1.png" alt="Javiera Zuñiga">
         <NuxtLink ref="mobileLink" to="/trabajos" class="text-lg text-black/80 hover:text-black transition-colors">
           Ver mi trabajo >>
         </NuxtLink>
