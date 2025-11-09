@@ -4,7 +4,7 @@
       <div class="flex flex-col items-start justify-center h-full md:hidden space-y-8">
         <div ref="mobileTitle">
           <h1 class="text-6xl font-extrabold text-gray-700" >
-            Javiera<br> <span class="inline-block ms-24 sm:ms-40" >Zuñiga</span> 
+            Javiera<br> <span class="inline-block ms-32 sm:ms-40" >Zuñiga</span> 
           </h1>
           <p class="text-xl text-gray-700 mt-2">Graphic Designer</p>
         </div>
