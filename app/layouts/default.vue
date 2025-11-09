@@ -1,7 +1,7 @@
 <template>
-  <div class="relative h-full">
+  <div class="relative min-h-screen">
     <!-- Fondo animado -->
-    <div class="fixed h-full inset-0 -z-10 overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100">
+    <div class="fixed inset-0 -z-10 overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100">
       <div class="floating-shape shape-1"></div>
       <div class="floating-shape shape-2"></div>
       <div class="floating-shape shape-3"></div>
