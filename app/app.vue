@@ -8,9 +8,7 @@
 
 <style>
 body {
-  background: linear-gradient(to bottom right, #f9fafb, #e5e7eb);
-  background-attachment: fixed;
-  min-height: 100vh;
+  background: #F3D5E1;
 }
 
 .page-enter-active,
