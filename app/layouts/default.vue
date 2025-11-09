@@ -1,7 +1,7 @@
 <template>
-  <div class="relative min-h-screen">
+  <div class="relative h-full">
     <!-- Fondo animado -->
-    <div class="background-fixed">
+    <div class="fixed h-full inset-0 -z-10 overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100">
       <div class="floating-shape shape-1"></div>
       <div class="floating-shape shape-2"></div>
       <div class="floating-shape shape-3"></div>
@@ -13,30 +13,11 @@
 </template>
 
 <style scoped>
-.background-fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100vh;
-  height: 100dvh; /* Dynamic viewport height for mobile */
-  z-index: -10;
-  overflow: hidden;
-  background: linear-gradient(to bottom right, #f9fafb, #e5e7eb);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-}
-
 .floating-shape {
   position: absolute;
   border-radius: 50%;
   opacity: 0.3;
   filter: blur(80px);
-  will-change: transform;
 }
 
 .shape-1 {
