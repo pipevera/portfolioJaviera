@@ -14,7 +14,7 @@
       ></div>
       <div class="space-y-3">
         <div 
-          v-for="(experience, index) in experiences" 
+          v-for="(experience, index) in expe  riences" 
           :key="index"
           ref="timelineItems"
           :class="[
@@ -71,32 +71,60 @@ const timelineItems = ref([])
 
 const experiences = [
   {
-    period: 'Feb 2023 - Actualidad',
+    period: '2023 - Actualidad',
     position: 'Diseñadora Gráfica Senior',
     company: 'Pichara',
-    description: 'Marketing y Publicidad. Desarrollo de estrategias visuales y campañas creativas para diversos clientes. Liderando proyectos de branding y comunicación visual.',
-    skills: ['Marketing', 'Publicidad', 'Branding', 'Estrategia Visual']
+    description: 'Liderando la creación de piezas gráficas para marketing y publicidad. Conceptualización y diseño integral de campañas 360°, desarrollo de material POP y diseño de vitrinas para tiendas. Diseño de papelería corporativa, folletos, catálogos y cartas de color. Gestión de E-Commerce, revestimiento de páginas web, diseño de mailings y contenido para medios y RRSS.',
+    skills: ['Campañas 360°', 'Material POP', 'E-Commerce', 'RRSS', 'Branding']
   },
   {
-    period: 'Mar 2021 - Sept 2022',
-    position: 'Diseñadora Multimedia',
+    period: '2021 - 2022',
+    position: 'Diseñadora Multimedia Digital',
     company: 'The Brands Club',
-    description: 'Marketing Digital. Creación de contenido multimedia para campañas digitales, diseño de piezas para redes sociales y desarrollo de identidades visuales para marcas.',
-    skills: ['Marketing Digital', 'Multimedia', 'Social Media', 'Contenido Digital']
+    description: 'Especializada en marketing para E-Commerce. Desarrollo de campañas digitales integrales, gestión de contenido para RRSS, diseño de mailings estratégicos y planificación de medios digitales. Creación de piezas multimedia optimizadas para plataformas digitales.',
+    skills: ['E-Commerce', 'Marketing Digital', 'RRSS', 'Mailing', 'Plan de Medios']
   },
   {
-    period: 'Ene 2020 - Mar 2021',
+    period: '2020 - 2021',
     position: 'Diseñadora Gráfica',
-    company: 'Empresas DBS',
-    description: 'Marketing. Diseño de materiales gráficos para campañas de marketing, desarrollo de piezas publicitarias y apoyo en estrategias de comunicación visual.',
-    skills: ['Marketing', 'Diseño Gráfico', 'Publicidad', 'Comunicación Visual']
+    company: 'DBS Beauty Store y Tiendas Make Up',
+    description: 'Diseño de piezas gráficas para el área de marketing. Desarrollo de campañas publicitarias, gestión de RRSS, diseño de packaging para productos de belleza. Revestimiento y actualización de E-Commerce, creación de mailings y material POP para puntos de venta.',
+    skills: ['Marketing', 'Packaging', 'E-Commerce', 'RRSS', 'Material POP']
   },
   {
-    period: 'Sept 2018 - Dic 2019',
+    period: '2018 - 2019',
     position: 'Diseñadora Gráfica',
-    company: 'L\'Oréal',
-    description: 'Diseño y desarrollo de materiales gráficos para productos de belleza. Colaboración en campañas de marketing y creación de contenido visual para la marca.',
-    skills: ['Diseño Gráfico', 'Belleza', 'Retail', 'Packaging']
+    company: 'L\'ORÉAL',
+    description: 'Creación de piezas gráficas para las marcas Maybelline New York y Vogue. Desarrollo de campañas 360° integradas, gestión de RRSS, diseño de packaging premium, catálogos y cartas de color. Producción de mailings, material POP para retail y planificación de medios publicitarios.',
+    skills: ['Campañas 360°', 'Packaging', 'RRSS', 'Catálogos', 'Retail']
+  },
+  {
+    period: '2017',
+    position: 'Asistente de Capacitación',
+    company: 'OTIC SOFOFA',
+    description: 'Gestión y coordinación de servicios de capacitación en Edificio CCU, Las Condes. Apoyo administrativo en programas de formación profesional y desarrollo de competencias.',
+    skills: ['Gestión', 'Capacitación', 'Coordinación', 'Administración']
+  },
+  {
+    period: '2017',
+    position: 'Diseñadora de Proyecto Social',
+    company: 'Ministerio de Desarrollo Social',
+    description: 'Proyecto Atlas de Acción Social 2017. Diseño y diagramación completa del Atlas de Áreas Prioritarias para 75 Comunas de Chile. Trabajo con datos geográficos y sociales para crear material editorial de alto impacto.',
+    skills: ['Diseño Editorial', 'Diagramación', 'Infografías', 'Proyecto Social']
+  },
+  {
+    period: '2015 - 2017',
+    position: 'Diseñadora Freelance',
+    company: 'Independiente',
+    description: 'Desarrollo de proyectos de diseño gráfico para diversos clientes. Gestión integral de proyectos desde la conceptualización hasta la entrega final, abarcando identidad visual, material publicitario y diseño digital.',
+    skills: ['Freelance', 'Diseño Gráfico', 'Gestión de Proyectos', 'Branding']
+  },
+  {
+    period: '2015',
+    position: 'Práctica Profesional',
+    company: 'Eduk Diseño',
+    description: 'Estudio de diseño especializado. Apoyo en diseño de gráfica corporativa y marketing, colaboración en proyectos de museografía. Fotografía de productos, edición y postproducción, diseño y diagramación de catálogos comerciales.',
+    skills: ['Diseño Corporativo', 'Fotografía', 'Catálogos', 'Museografía']
   }
 ]
 
