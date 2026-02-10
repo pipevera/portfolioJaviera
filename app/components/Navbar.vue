@@ -66,7 +66,8 @@
         scrolled: false,
         navLinks: [
           { name: 'Trabajos', path: '/trabajos' },
-          { name: 'Sobre mi', path: '/sobre-mi' }
+          { name: 'Experiencia', path: '/experiencia'},
+          { name: 'Sobre mi', path: '/sobre-mi' },
         ]
       }
     },

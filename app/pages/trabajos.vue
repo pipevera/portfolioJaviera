@@ -17,6 +17,7 @@
           image.size === 'wide' ? 'md:col-span-2 h-[240px]' : '',
           image.size === 'tall' ? 'md:row-span-2 h-[484px]' : ''
         ]"
+        @click="openLightbox(index)"
       >
         <img 
           :src="image.url" 
@@ -31,6 +32,13 @@
         </div>
       </div>
     </div>
+
+    <Lightbox 
+      :images="images" 
+      :initial-index="selectedImageIndex"
+      :is-open="isLightboxOpen"
+      @close="closeLightbox"
+    />
   </section>
 </template>
 
@@ -44,6 +52,17 @@ gsap.registerPlugin(ScrollTrigger)
 const header = ref(null)
 const gridContainer = ref(null)
 const workItems = ref([])
+const isLightboxOpen = ref(false)
+const selectedImageIndex = ref(0)
+
+const openLightbox = (index) => {
+  selectedImageIndex.value = index
+  isLightboxOpen.value = true
+}
+
+const closeLightbox = () => {
+  isLightboxOpen.value = false
+}
 
 const images = [
   {
