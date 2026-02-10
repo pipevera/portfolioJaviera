@@ -59,6 +59,14 @@ import { ref, onMounted } from 'vue'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
+useHead({
+  title: 'Sobre Mí - Javiera Zuñiga',
+  meta: [
+    { name: 'description', content: 'Conoce más sobre Javiera Zuñiga, diseñadora gráfica con más de 5 años de experiencia en marketing, publicidad y diseño digital.' },
+    { name: 'keywords', content: 'sobre mi, diseñadora gráfica, experiencia, CV, portafolio' }
+  ]
+})
+
 gsap.registerPlugin(ScrollTrigger)
 
 const header = ref(null)

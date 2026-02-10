@@ -39,6 +39,14 @@
 import { ref, onMounted } from 'vue'
 import { gsap } from 'gsap'
 
+useHead({
+  title: 'Javiera Zuñiga - Diseñadora Gráfica',
+  meta: [
+    { name: 'description', content: 'Diseñadora Gráfica especializada en marketing, publicidad y campañas 360°.' },
+    { name: 'keywords', content: 'diseño gráfico, diseñadora, marketing, publicidad, branding, Chile' }
+  ]
+})
+
 const mobileTitle = ref(null)
 const mobileImage = ref(null)
 const mobileLink = ref(null)

@@ -14,7 +14,7 @@
       ></div>
       <div class="space-y-3">
         <div 
-          v-for="(experience, index) in expe  riences" 
+          v-for="(experience, index) in experiences" 
           :key="index"
           ref="timelineItems"
           :class="[
@@ -62,6 +62,14 @@
 import { ref, onMounted } from 'vue'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+useHead({
+  title: 'Experiencia - Javiera Zuñiga',
+  meta: [
+    { name: 'description', content: 'Mi trayectoria profesional: Pichara, The Brands Club, L\'Oréal, DBS y más. Experiencia en diseño gráfico y marketing.' },
+    { name: 'keywords', content: 'experiencia laboral, trayectoria, CV, diseñadora gráfica, marketing' }
+  ]
+})
 
 gsap.registerPlugin(ScrollTrigger)
 
