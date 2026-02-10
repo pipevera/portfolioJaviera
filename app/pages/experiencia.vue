@@ -1,5 +1,5 @@
 <template>
-  <section class="max-w-7xl mx-auto px-10 py-20">
+  <section class="max-w-5xl mx-auto px-10 py-20">
     <div ref="header" class="mb-16">
       <h1 class="text-6xl md:text-8xl font-extrabold text-gray-700 mb-4">
         Mi <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">Experiencia</span>
@@ -30,7 +30,7 @@
 
           <div 
             :class="[
-              'ml-20 md:ml-0 md:w-5/12',
+              'ml-20 md:ml-0 md:w-6/12',
               index % 2 === 0 ? 'md:text-right md:pr-16' : 'md:pl-16'
             ]"
           >
@@ -40,12 +40,12 @@
               </span>
               <h3 class="text-2xl font-bold text-gray-800 mb-2">{{ experience.position }}</h3>
               <h4 class="text-lg font-semibold text-purple-600 mb-3">{{ experience.company }}</h4>
-              <p class="text-gray-600 leading-relaxed mb-4">{{ experience.description }}</p>
+              <p class="text-gray-600 text-sm mb-4">{{ experience.description }}</p>
               <div class="mt-4 flex flex-wrap gap-2" :class="index % 2 === 0 ? 'md:justify-end' : ''">
                 <span 
                   v-for="skill in experience.skills" 
                   :key="skill"
-                  class="px-3 py-1 bg-purple-100 text-purple-700 text-sm rounded-full"
+                  class="px-3 py-1 bg-purple-100 text-xs text-purple-700 text-sm rounded-full"
                 >
                   {{ skill }}
                 </span>

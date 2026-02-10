@@ -25,7 +25,7 @@
         <div class="flex items-center gap-12">
           <div ref="desktopImage"  >
 
-            <img class="w-full max-w-lg relative z-0 rounded-2xl shadow-2xl hover:scale-105 transition duration-300" src="/images/1.png" alt="Javiera Zuñiga">
+            <img class="w-full max-w-lg max-h-[550px] relative z-0 rounded-2xl shadow-2xl hover:scale-105 transition duration-300" src="/images/1.png" alt="Javiera Zuñiga">
           </div>
           <NuxtLink ref="desktopLink" to="/trabajos" class="text-xl text-black/80 hover:text-black transition-colors whitespace-nowrap">
             Ver mi trabajo >>
