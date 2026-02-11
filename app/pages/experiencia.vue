@@ -7,7 +7,7 @@
       <!-- <p class="text-xl text-gray-600 mt-4">Un recorrido por mi trayectoria profesional</p> -->
     </div>
 
-    <div class="relative pl-4 md:pl-0">
+    <div ref="timelineContainer" class="relative pl-4 md:pl-0">
       <div 
         ref="timelineLine"
         class="absolute left-0 md:left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-purple-600 to-pink-600 transform md:-translate-x-1/2"
@@ -74,6 +74,7 @@ useHead({
 gsap.registerPlugin(ScrollTrigger)
 
 const header = ref(null)
+const timelineContainer = ref(null)
 const timelineLine = ref(null)
 const timelineItems = ref([])
 
@@ -145,6 +146,13 @@ onMounted(() => {
     y: -50,
     duration: 1
   })
+
+  // Timeline container initial animation (after header)
+  tl.from(timelineContainer.value, {
+    opacity: 0,
+    y: 50,
+    duration: 0.8
+  }, 0.8)
 
   // Timeline line animation
   gsap.from(timelineLine.value, {
