@@ -10,7 +10,7 @@
     <div class="relative">
       <div 
         ref="timelineLine"
-        class="absolute left-0 md:left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-purple-600 to-pink-600 transform md:-translate-x-1/2"
+        class="absolute -left-4 md:left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-purple-600 to-pink-600 transform md:-translate-x-1/2"
       ></div>
       <div class="space-y-6">
         <div 
@@ -23,14 +23,14 @@
           ]"
         >
           <div 
-            class="absolute left-0 md:left-1/2 w-6 h-6 bg-gradient-to-br from-purple-600 to-pink-600 rounded-full transform -translate-x-1/2 z-10 shadow-lg"
+            class="absolute -left-4 md:left-1/2 w-6 h-6 bg-gradient-to-br from-purple-600 to-pink-600 rounded-full transform -translate-x-1/2 z-10 shadow-lg"
           >
             <div class="absolute inset-1 bg-white rounded-full"></div>
           </div>
 
           <div 
             :class="[
-              'ml-10 md:ml-0 md:w-6/12',
+              'ml-2 md:ml-0 md:w-6/12',
               index % 2 === 0 ? 'md:text-right md:pr-16' : 'md:pl-16'
             ]"
           >
