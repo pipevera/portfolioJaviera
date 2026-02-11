@@ -12,8 +12,7 @@
         <div class="space-y-4 text-sm text-black/70">
           <p ref="paragraph1">
             Soy diseñadora y creativa apasionada por transformar ideas en experiencias visuales únicas. 
-            Con más de 5 años de experiencia en el mundo del diseño, he trabajado en proyectos que van 
-            desde branding hasta diseño web.
+            Con más de 5 años de experiencia en el mundo del diseño.
           </p>
           <p ref="paragraph2">
             Mi enfoque se centra en crear soluciones que no solo se vean bien, sino que también cuenten 
