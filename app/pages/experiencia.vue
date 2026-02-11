@@ -83,7 +83,7 @@ const experiences = [
     position: 'Diseñadora Gráfica Senior',
     company: 'Pichara',
     description: 'Liderando la creación de piezas gráficas para marketing y publicidad. Conceptualización y diseño integral de campañas 360°, desarrollo de material POP y diseño de vitrinas para tiendas. Diseño de papelería corporativa, folletos, catálogos y cartas de color. Gestión de E-Commerce, revestimiento de páginas web, diseño de mailings y contenido para medios y RRSS.',
-    skills: ['Campañas 360°', 'Material POP', 'E-Commerce', 'RRSS', 'Branding']
+    skills: ['Campañas 360°', 'Material POP', 'E-Commerce', 'RRSS', 'Branding', 'Fotografía']
   },
   {
     period: '2021 - 2022',
@@ -125,7 +125,7 @@ const experiences = [
     position: 'Diseñadora Freelance',
     company: 'Independiente',
     description: 'Desarrollo de proyectos de diseño gráfico para diversos clientes. Gestión integral de proyectos desde la conceptualización hasta la entrega final, abarcando identidad visual, material publicitario y diseño digital.',
-    skills: ['Freelance', 'Diseño Gráfico', 'Gestión de Proyectos', 'Branding']
+    skills: ['Diseño Gráfico', 'Gestión de Proyectos', 'Branding']
   },
   {
     period: '2015',
