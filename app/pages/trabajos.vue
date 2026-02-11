@@ -8,22 +8,23 @@
 
     <div ref="gridContainer" class="w-full h-[calc(100vh-200px)]">
       <iframe 
-        src="/portafolio/portafolio.pdf" 
+        src="/portafolio/portafolio.pdf#view=FitH&toolbar=1&navpanes=1&scrollbar=1" 
         class="w-full h-full border-0 rounded-lg shadow-lg"
         title="Portafolio PDF"
+        allow="fullscreen"
       ></iframe>
     </div>
 
     <div class="mt-8 text-center">
       <a 
         href="/portafolio/portafolio.pdf" 
-        download
+        target="_blank"
         class="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-full hover:shadow-lg transition-all duration-300 hover:scale-105"
       >
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
         </svg>
-        Descarga mi portafolio aquí
+        Abrir en pantalla completa
       </a>
     </div>
 
