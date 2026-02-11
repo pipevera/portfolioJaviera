@@ -19,6 +19,7 @@ export default {
     },
     fontFamily: {
       made: ["Wix Madefor Text", "sans-serif"],
+      yellowTail: ["Yellowtail", "sans-serif"]
     },
     extend: {
       colors: {

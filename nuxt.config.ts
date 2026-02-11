@@ -15,6 +15,7 @@ export default defineNuxtConfig({
   googleFonts: {
     families: {
       'Wix+Madefor+Text': [100, 200, 300, 400, 500, 600, 700, 800, 900],
+      'Yellowtail': [400],
       preload: false,
       preconnect: false,
       download: true,

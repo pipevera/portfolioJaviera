@@ -18,7 +18,7 @@
       <div class="hidden md:block relative">
         <div ref="desktopTitle" class="absolute top-10 -right-10 z-20">
           <h1 class="text-7xl font-extrabold text-gray-700" >
-            Javiera<br> <span class="inline-block ms-40" >Zuñiga</span> 
+            Javiera<br> <span class="inline-block ms-40">Zuñiga</span> 
           </h1>
           <p class="text-2xl text-gray-700 mt-4 ms-40">Graphic Designer</p>
         </div>
