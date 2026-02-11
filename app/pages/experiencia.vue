@@ -12,7 +12,7 @@
         ref="timelineLine"
         class="absolute left-0 md:left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-purple-600 to-pink-600 transform md:-translate-x-1/2"
       ></div>
-      <div class="space-y-3">
+      <div class="space-y-6">
         <div 
           v-for="(experience, index) in experiences" 
           :key="index"
