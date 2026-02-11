@@ -1,5 +1,5 @@
 <template>
-  <section class="max-w-5xl mx-auto px-10 py-20">
+  <section class="max-w-5xl mx-auto px-10 py-20 overflow-x-hidden">
     <div ref="header" class="mb-16">
       <h1 class="text-6xl md:text-8xl font-extrabold text-gray-700 mb-4">
         Mi <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">Experiencia</span>
@@ -7,10 +7,10 @@
       <!-- <p class="text-xl text-gray-600 mt-4">Un recorrido por mi trayectoria profesional</p> -->
     </div>
 
-    <div class="relative">
+    <div class="relative pl-4 md:pl-0">
       <div 
         ref="timelineLine"
-        class="absolute -left-4 md:left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-purple-600 to-pink-600 transform md:-translate-x-1/2"
+        class="absolute left-0 md:left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-purple-600 to-pink-600 transform md:-translate-x-1/2"
       ></div>
       <div class="space-y-6">
         <div 
@@ -30,7 +30,7 @@
 
           <div 
             :class="[
-              'ml-2 md:ml-0 md:w-6/12',
+              'ml-6 md:ml-0 md:w-6/12',
               index % 2 === 0 ? 'md:text-right md:pr-16' : 'md:pl-16'
             ]"
           >
