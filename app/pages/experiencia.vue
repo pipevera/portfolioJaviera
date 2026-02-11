@@ -45,7 +45,7 @@
                 <span 
                   v-for="skill in experience.skills" 
                   :key="skill"
-                  class="px-3 py-1 bg-purple-100 text-xs text-purple-700 text-sm rounded-full"
+                  class="px-3 py-1 border border-purple-700 text-xs text-purple-700  rounded-full"
                 >
                   {{ skill }}
                 </span>

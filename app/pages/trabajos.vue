@@ -6,7 +6,15 @@
       </h1>
     </div>
 
-    <div ref="gridContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+    <div ref="gridContainer" class="w-full h-[calc(100vh-200px)]">
+      <iframe 
+        src="/portafolio/portafolio.pdf" 
+        class="w-full h-full border-0 rounded-lg shadow-lg"
+        title="Portafolio PDF"
+      ></iframe>
+    </div>
+
+    <!-- <div ref="gridContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
       <div 
         v-for="(image, index) in images" 
         :key="index"
@@ -31,14 +39,14 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <Lightbox 
+    <!-- <Lightbox 
       :images="images" 
       :initial-index="selectedImageIndex"
       :is-open="isLightboxOpen"
       @close="closeLightbox"
-    />
+    /> -->
   </section>
 </template>
 
