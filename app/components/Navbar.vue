@@ -7,7 +7,7 @@
       ]"
     >
       <div class="flex items-center justify-between p-4" >
-        <NuxtLink @click="isOpen = false" to="/" class="font-bold text-2xl text-gray-700 font-yellowTail " >JZ</NuxtLink>
+        <NuxtLink @click="isOpen = false" to="/" class="font-bold text-4xl text-gray-700 font-yellowTail " >JZ</NuxtLink>
         <button @click="isOpen = !isOpen" class="flex flex-col gap-1.5 w-7 focus:outline-none" >
           <span :class="[
               'block h-0.5 w-full bg-gray-700 rounded transition-all duration-300 ease-in-out',
@@ -43,7 +43,7 @@
     <nav class="fixed left-0 top-0 h-screen w-48  z-50 hidden xl:block " >
       <div class="flex flex-col justify-between h-full p-6" >
         <div class="flex flex-col space-y-5" >
-          <NuxtLink to="/" class="font-bold text-2xl whitespace-nowrap text-gray-700 font-yellowTail" >JZ</NuxtLink>
+          <NuxtLink to="/" class="font-bold text-4xl whitespace-nowrap text-gray-700 font-yellowTail" >JZ</NuxtLink>
           <NuxtLink 
             v-for="link in navLinks" 
             :key="link.path" 
